@@ -90,13 +90,13 @@ Token = Information.Token
 bot_id = Token:match("(%d+)")
 os.execute('sudo rm -fr .infoBot/'..bot_id)
 bot = Runbot.set_config{
-api_id=12221441,
-api_hash='9fb5fdf24e25e54b745478b4fb71573b',
+api_id=11176270,
+api_hash='7f3c48e7d00da77f670c180175ca555b',
 session_name=bot_id,
 token=Token
 }
-Sudos = {sudoid,874820580,874820580}
-Sudo_Id = 874820580
+Sudos = {sudoid,605460462,605460462}
+Sudo_Id = 605460462
 function Bot(msg)  
 local idbot = false  
 if tonumber(msg.sender.user_id) == tonumber(bot_id) then  
@@ -555,17 +555,17 @@ if text == 'معرفة المزيد 📩' then
 return bot.sendText(msg.chat_id,msg.id,[[*
 - مرحباً بك من جديد عزيزي 👋🏻
 
-- تم انشاء الصانع مقدم من قناة ( @yousef_labban1 ) مجاناً 
+- تم انشاء الصانع مقدم من قناة ( @YYYPL ) مجاناً 
 
 • مطور الصانع 
-• @yousef_labban
+• @YYYPC
 
-• الاصدار  : 2.1.0
+• الاصدار  : V1
 
-• تاريخ الانشاء :* ( `2022/3/3` )
+• تاريخ الانشاء :* ( `2022/7/5` )
 *⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯ ⎯
-- قناة شروحات السورس : @yousef_labban1 .
-- بوت تواصل دعم السورس : @yousef_labban1 .*
+- قناة شروحات السورس : @YYYPL .
+- للتواصل مع دعم السورس : @YYYPC .*
 ]], 'md', false, false, false, false, reply_markun)
 end
 if redis:get(bot_id.."Send:Token"..msg.chat_id..":"..msg.sender.user_id) == 'true' then
@@ -640,7 +640,7 @@ redis:set(bot_id.."Send:Token"..msg.chat_id..":"..msg.sender.user_id,'true')
 return bot.sendText(msg.chat_id,msg.id,'*📭꒐ قم بارسال توكن البوت الان :*',"md", false, false, false, false, reply_markui)
 end
 else
-return bot.sendText(msg.chat_id,msg.id,'*⚠️꒐ عذرأ ، تم ايقاف الوضع المجاني من خلال مطور البوت  يفتح في بضع ساعات او يوجد صيانة في الصانع \n - بوت الدعم : @yousef_labban1*', 'md', false, false, false, false, reply_markun)
+return bot.sendText(msg.chat_id,msg.id,'*⚠️꒐ عذرأ ، تم ايقاف الوضع المجاني من خلال مطور البوت  يفتح في بضع ساعات او يوجد صيانة في الصانع \n - للتواصل مع دعم السورس : @YYYPC*', 'md', false, false, false, false, reply_markun)
 end
 end
 if text and redis:get(bot_id.."Del:S:Bot"..msg.chat_id..":"..msg.sender.user_id) == 'true' then
