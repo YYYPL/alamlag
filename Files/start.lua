@@ -796,7 +796,7 @@ groups = gresuult
 local File = io.open('./'..bot_id..'.json', "w")
 File:write(JSON.encode (resuult))
 File:close()
-bot.sendDocument(R,0,'./'..bot_id..'.json', '  🔱 ┇تم كلب النسخة الاحتياطية', 'md')
+bot.sendDocument(R,0,'./'..bot_id..'.json', '  🔱 ┇تم جلب النسخة الاحتياطية', 'md')
 end
 function download(url,name)
 if not name then
@@ -7950,7 +7950,7 @@ end
 ----------------------------------------------------------------------------------------------------
 -- نهايه التفعيل
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then 
-local Text = "*ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ alamlag\n\n*[ 🔱 ┇  alamlag ᴄʜᴀɴɴᴇʟ](http://t.me/YYYPL)*\n\n*[ 🔱 ┇  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/YYYPL)*\n\n*[ 🔱 ┇  alamlag ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/YYYPC)*\n\n*[ 🔱 ┇  ʙᴏᴛ alamlag](https://telegram.me/alamlagbot?start)*\n*"
+local Text = "*ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ alamlag\n\n*[ 🔱 ┇  alamlag ᴄʜᴀɴɴᴇʟ](http://t.me/YYYPL)*\n\n*[ 🔱 ┇  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/YYYPL)*\n\n*[ 🔱 ┇  alamlag ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/YYYPC)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
