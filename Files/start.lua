@@ -3548,6 +3548,9 @@ keyboard.inline_keyboard = {
 }
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/YYYPL&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+if text == "شغال" then
+bot.sendText(msg.chat_id,msg.id,"*🔱 ┇نعم عزيزي باقي واتمدد 😎🌿*","md",true)  
+end
 if text == "الساعة" then
 bot.sendText(msg.chat_id,msg.id,"*  🔱 ┇الساعة الان : ( "..os.date("%I:%M%p").." )*","md",true)  
 end
@@ -7949,15 +7952,32 @@ end
 end
 ----------------------------------------------------------------------------------------------------
 -- نهايه التفعيل
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then 
-local Text = "*ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ alamlag\n\n*[ 🔱 ┇  alamlag ᴄʜᴀɴɴᴇʟ](http://t.me/YYYPL)*\n\n*[ 🔱 ┇  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/YYYPL)*\n\n*[ 🔱 ┇  alamlag ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/YYYPC)"
-keyboard = {} 
-keyboard.inline_keyboard = {
+
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
+bot.sendText(msg.chat_id,msg.id,"*Welcome To Source 🔱 ALAMLAG 🔱*
+
+🔱┇[ALAMLAG Team](https://t.me/YYYPC)
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+📬┇ [Source Channel](https://t.me/YYYPL)
+    
+📊┇ [Source Install](https://t.me/YYYPL)
+    
+🆔┇ [Changing ID Channel](https://t.me/YYYPL)
+    
+📋┇ [TEAM Source](https://t.me/YYYPC)
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+📮┇ [ConnectDeV](https://t.me/YYYPC)","md", bot.replyMarkup{
+type = 'inline',data = {
+	{
+{text = '- تنصيب سورس',url="https://telegram.me/YYYPL"}
+},
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 alamlag ',url="t.me/YYYPL"}
+{text = 'ـ مطور السورس',url="t.me/YYYPC"}
 },
 }
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/YYYPL&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+}
+) 
+
 end
 ----------------------------------------------------------------------------------------------------
 if text == 'تفعيل' then
